@@ -1,12 +1,19 @@
 {
     "display_name": "SillyTavern-quick_reply_loader",
     "loading_order": 15,
-    "requires": [],
-    "optional": [],
-    "js": "index.js",
-    "css": "style.css",
-    "author": "kasyanalexandra5732",
-    "version": "1.0",
-    "homePage": "https://github.com/kasyanalexandra5732-debug/SillyTavern-quick_reply_loader"
-    
-}
+    {
+  "display_name": "Quick Reply",
+  "module_name": "quickReply",
+  "author": "YourName",
+  "version": "1.0.0",
+  "description": "Добавляет кнопку быстрого ответа пользователя в Magic меню",
+  "repo": "",
+  "tags": ["magic", "ui", "user", "buttons"],
+  "homepage": "https://github.com/kasyanalexandra5732-debug/SillyTavern-quick_reply_loader",
+  "files": [
+    "script.js"
+  ],
+  "requires": {
+    "magic": ">=1.0.0"
+  }
+
