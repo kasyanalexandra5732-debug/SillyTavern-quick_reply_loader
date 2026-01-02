@@ -34,8 +34,8 @@ Please ensure each suggestion is enclosed within <suggestion> tags, for example:
 ...
 
 The response should not contain any other content.,
-    llm_prompt_impersonate: `[从 {{user}} 的视角，为下一个故事节点设定事件方向：{{suggestionText}}]
-[依据上述事件方向，撰写用户的回应]`,
+    llm_prompt_impersonate: `[From {{user}}'s perspective, set the event direction for the next story node: {{suggestionText}}]
+[Based on the above event direction, write the user's response]`,
     apply_wi_an: true,
     num_responses: 5,
     response_length: 500,
