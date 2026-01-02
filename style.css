@@ -8,7 +8,7 @@
 }
 
 .mes_text .custom-suggestions:before {
-    content: "故事会如何继续呢?";
+    content: "How will the story continue?";
     font-weight: bold;
     display: block;
     text-align: center;
