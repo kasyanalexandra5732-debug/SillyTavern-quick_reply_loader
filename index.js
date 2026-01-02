@@ -20,20 +20,20 @@ const extensionName = "sillytavern-autoResp";
 const extensionFolderPath = `scripts/extensions/third-party/${extensionName}`;
 const defaultSettings = {
     enabled: false,
-    llm_prompt: `请立即停止当前的角色扮演，并提供一个回复，包含 {{suggestionNumber}} 个简短、独特的单句建议，用于推动故事的下一个节点，从 {{user}} 的视角出发。
-    每个建议应符合以下描述之一：
-1. 缓解紧张局势，改善主角的处境。
-2. 制造或增加紧张局势，恶化主角的处境。
-3. 直接但合理地引导故事走向一个出人意料的转折或非常奇特的事件。
-4. 缓慢地推动故事发展，不结束当前场景。
-5. 推动故事前进，如果合适，可以结束当前场景。
+    llm_prompt: `Please immediately stop the current roleplay and provide a response containing {{suggestionNumber}} brief, unique single-sentence suggestions to drive the story to the next node, from {{user}}'s perspective.
+Each suggestion should correspond to one of the following descriptions:
+1. Alleviate tension and improve the protagonist's situation.
+2. Create or increase tension, worsening the protagonist's situation.
+3. Directly but reasonably guide the story toward an unexpected twist or a very unusual event.
+4. Slowly advance the story without ending the current scene.
+5. Drive the story forward, ending the current scene if appropriate.
 
-请确保每个建议都被 <suggestion> 标签包围，例如：
-<suggestion>建议1</suggestion>
-<suggestion>建议2</suggestion>
+Please ensure each suggestion is enclosed within <suggestion> tags, for example:
+<suggestion>Suggestion 1</suggestion>
+<suggestion>Suggestion 2</suggestion>
 ...
 
-回复中不应包含其他内容。`,
+The response should not contain any other content.,
     llm_prompt_impersonate: `[从 {{user}} 的视角，为下一个故事节点设定事件方向：{{suggestionText}}]
 [依据上述事件方向，撰写用户的回应]`,
     apply_wi_an: true,
